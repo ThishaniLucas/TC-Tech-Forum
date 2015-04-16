@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+{{#layout was also editd}}
+<h1>
+    Create Blog Post
+</h1>
+{{=form}}
