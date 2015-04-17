@@ -4,7 +4,7 @@
 def index():
     form = SQLFORM(db.Blog_Post).process()
     if form.accepted:
-        session.flash('Posted')
+        session.flash = 'Posted'
         redirect(URL('read'))
     return locals()
 

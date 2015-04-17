@@ -27,9 +27,10 @@ response.menu = [
     (T('Forum'), False, URL('Forum', 'read'), [
        (T('Create'), False, URL('Forum', 'index')),
        (T('Previous Posts'), False, URL('Forum', 'read')),]),
-    (T('Manage Posts'), False, URL('Forum', 'manage'), []),
 ]
 
+if auth.has_membership('Founder'):
+    response.menu.append((T('Manage Posts'), False, URL('Forum', 'manage'), []),)
 DEVELOPMENT_MENU = False #this will display web2py menu if this is True
 
 #########################################################################
