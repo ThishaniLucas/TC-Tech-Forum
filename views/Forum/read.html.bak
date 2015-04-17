@@ -3,7 +3,7 @@
 <table width="100%">
     <tr>
         <td><h3>Post Title</h3></td>
-        <td><h3>Post issued on</h3></td>
+        <td><h3>Post issued</h3></td>
     </tr>
 </table>
 {{#a python block start with : and end with pass statement in web2py}}
@@ -11,7 +11,7 @@
 <table width="100%">
     <tr>
         <td><h4><a href="{{=URL('viewPost',args=row.id)}}">  {{=row.Title}}  </a>        </h4></td>
-        <td><h4>{{=str(row.Posted_On)}} by {{=str(row.Posted_by)}} </h4></td>
+        <td><h4>{{=str(row.created_on)}} by {{=row.created_by.first_name}}</h4></td>
     </tr>
 </table>
 {{pass}}
