@@ -14,6 +14,11 @@ def read():
 
 def viewPost():
     po = db.Blog_Post(request.args(0,cast=int))
+    db.Blog_Comm.Blog_Post.default = po.id
+    db.Blog_Comm.Blog_Post.readable = False
+    db.Blog_Comm.Blog_Post.writable = False
+    form = SQLFORM(db.Blog_Comm).process()
+    comm = db(db.Blog_Comm.Blog_Post == po.id).select()
     return locals()
 
 @auth.requires_membership('Founder')

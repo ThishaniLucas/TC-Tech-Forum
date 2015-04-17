@@ -5,3 +5,7 @@ db.define_table('Blog_Post',
                auth.signature)
 #we have created a database table name call blog_post with 3 columns and a additional ID column(autoincrementing primary key )
 #default type of field is 'String'
+db.define_table('Blog_Comm',
+               Field('Blog_Post','reference Blog_Post'),
+               Field('Comments','text',requires=IS_NOT_EMPTY()),
+               auth.signature)

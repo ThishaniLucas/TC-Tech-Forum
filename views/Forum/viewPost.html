@@ -4,3 +4,20 @@
   {{=MARKMIN(po.Post)}}
 </h4>
 <i>posted on</i><h6>{{=po.created_on}} by {{=po.created_by.first_name}}</h6>
+<hr>
+<br ><br >
+<h4>
+    Comments for this post
+</h4>
+{{=form}}
+<h5>
+    Previous comments
+</h5>
+
+{{for co in comm:}}
+<div class="well" id = "comments">
+    {{=co.Comments}}
+    <br>
+    <i>{{=co.created_by.first_name}} on  {{=co.created_on}}</i>
+</div>
+{{pass}}
