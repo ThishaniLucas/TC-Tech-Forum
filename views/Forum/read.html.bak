@@ -1,5 +1,6 @@
 {{extend 'layout.html'}}
-<h1>Blog Posts</h1>
+<div>
+    <h1>Blog Posts</h1>
 <table width="100%">
     <tr>
         <td><h3>Post Title</h3></td>
@@ -7,11 +8,13 @@
     </tr>
 </table>
 {{#a python block start with : and end with pass statement in web2py}}
+{{#MARKMIN - google it}}
 {{for row in rows:}}
 <table width="100%">
     <tr>
         <td><h4><a href="{{=URL('viewPost',args=row.id)}}">  {{=row.Title}}  </a>        </h4></td>
-        <td><h4>{{=str(row.created_on)}} by {{=row.created_by.first_name}}</h4></td>
+        <td style="float:right"><h4>{{=str(row.created_on)}} by {{=row.created_by.first_name}}</h4></td>
     </tr>
 </table>
 {{pass}}
+</div>

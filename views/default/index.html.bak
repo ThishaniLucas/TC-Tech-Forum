@@ -1,5 +1,33 @@
 {{extend 'layout.html'}}
-<div id = 'text'
-This is an initial try given to build our very own forum
-this is just to practice web2py
+<div id = 'text'>
+<h3>This is an initial try given to build our very own forum</h3>
+<h3>this is just to practice web2py</h3>
+<hr>
+<h1>Blog Posts</h1>
+<!--<table width="100%">
+    <tr>
+        <td><h3>Post Title</h3></td>
+        <td><h3>Post issued</h3></td>
+    </tr>
+</table>-->
+<div class="well" style="background-color:black">
+{{for row in rows:}}
+<table width="1000px">
+    <tr>
+        <td><h4><a href="{{=URL('Forum','viewPost',args=row.id)}}">  {{=row.Title}}  </a>        </h4></td>
+        <td style="float:right"><a href="{{=URL('userDetails',args=row.created_by)}}"><h4 >by {{=row.created_by.first_name}}</h4></a></td>
+    </tr>
+</table>
+{{pass}}
+</div>
+</div>
+<div id = "members" class="well" style="background-color:pink">
+<h1 style="color:red">
+    Members of Forum
+</h1>
+{{for member in mem:}}
+    <a href="{{=URL('userDetails',args=member.id)}}"> <h4 style="color:green">
+         {{=member.first_name}} {{=member.last_name}}
+    </h4> </a>
+{{pass}}
 </div>

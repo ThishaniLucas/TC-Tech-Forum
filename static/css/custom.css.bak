@@ -1,14 +1,25 @@
 h1 {color:white;}
 #text {color:white;
         font-size:25px;
-        margin:10px;}
+        margin:10px;
+        float:left;
+        }
 body {
         color:white;
         }
 a:hover {
-        color:white;
+        color:black;
         }
 
 #comments {
+            color:red;
+        }
+
+#members {
+            width: 200px;
+            float:right;
+            position:fixed;
+            top:200px;
+            left:1300px;
             color:red;
         }

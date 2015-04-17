@@ -7,5 +7,5 @@ db.define_table('Blog_Post',
 #default type of field is 'String'
 db.define_table('Blog_Comm',
                Field('Blog_Post','reference Blog_Post'),
-               Field('Place_Your_Comment','text',requires=IS_NOT_EMPTY()),
+               Field('Comments','text',requires=IS_NOT_EMPTY()),
                auth.signature)

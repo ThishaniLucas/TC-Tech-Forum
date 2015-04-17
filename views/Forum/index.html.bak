@@ -1,6 +1,8 @@
 {{extend 'layout.html'}}
-{{#layout was also editd}}
-<h1>
+{{#layout was also editd , style sheets added}}
+<div class="well" style="background-color:black width:600px" >
+  <h1>
     Create Blog Post
-</h1>
-{{=form}}
+  </h1>
+  {{=form}}  
+</div>

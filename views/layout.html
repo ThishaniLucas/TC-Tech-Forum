@@ -15,7 +15,6 @@
   <!-- Always force latest IE rendering engine
        (even in intranet) & Chrome Frame
        Remove this if you use the .htaccess -->
-	   
   <meta charset="utf-8" />
 
   <!-- http://dev.w3.org/html5/markup/meta.name.html -->
@@ -100,8 +99,8 @@
         <div class="span12">
             <div class="page-header">
                 <h1>
-                    {{=response.title}}
-                    <small>{{=response.subtitle or ''}}</small>
+                    {{#=response.title}}TC Tech Forum
+                    <small><a href="http://www.mrt.ac.lk" title="take you to university of moratuwa website">{{=response.subtitle or ''}}</a></small>
                 </h1>
             </div>
         </div>

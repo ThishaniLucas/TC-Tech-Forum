@@ -18,8 +18,14 @@ def index():
     return auth.wiki()
     """
     response.flash = T("Welcome to TC Forum!")
+    mem = db(db.auth_user).select()
+    rows = db(db.Blog_Post).select()
     return locals()
 
+def userDetails():
+     me = db.auth_user(request.args(0,cast=int))
+     rows = db(db.Blog_Post).select()
+     return locals()
 
 def user():
     """

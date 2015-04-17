@@ -12,7 +12,7 @@ response.subtitle = 'University of moratuwa'
 
 ## read more at http://dev.w3.org/html5/markup/meta.name.html
 response.meta.author = 'Thishani Charles <thishanionline.1apps.com>'
-response.meta.keywords = 'web2py, python, framework, thishani,charles,forum,university,of, moratuwa'
+response.meta.keywords = 'web2py, python, framework, thishani,charles,forum,university,of, moratuwa, TC,Tech'
 response.meta.generator = 'Web2py Web Framework'
 
 ## your http://google.com/analytics id

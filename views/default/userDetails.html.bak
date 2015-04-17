@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+<h1>{{=me.first_name}} {{=me.last_name}}</h1>
+<h3>Posts of {{=me.first_name}}</h3>
+{{for row in rows:}}
+{{if row.created_by == me.id:}}
+<table width="1000px">
+    <tr>
+        <td><h4><a href="{{=URL('Forum','viewPost',args=row.id)}}">{{=row.Title}}</a> </h4></td>
+        <td><h4>{{=str(row.created_on)}}</h4></td>
+    </tr>
+</table>
+{{pass}}
+{{pass}}
