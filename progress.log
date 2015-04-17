@@ -244,3 +244,16 @@
 [2015-04-17 12:26:53] EDIT TC_Forum/views/Forum/viewPost.html: 0
 [2015-04-17 12:28:13] EDIT TC_Forum/views/Forum/viewPost.html: 0
 [2015-04-17 12:28:15] EDIT TC_Forum/views/Forum/read.html: 0
+[2015-04-17 12:34:08] EDIT TC_Forum/views/Forum/read.html: 1
+[2015-04-17 12:37:29] EDIT TC_Forum/controllers/Forum.py: 0
+[2015-04-17 12:37:55] EDIT TC_Forum/controllers/Forum.py: 1
+[2015-04-17 12:39:58] EDIT TC_Forum/controllers/Forum.py: 0
+[2015-04-17 12:41:31] EDIT TC_Forum/views/Forum/viewPost.html: 0
+[2015-04-17 12:42:16] EDIT TC_Forum/views/Forum/viewPost.html: 0
+[2015-04-17 12:42:58] EDIT TC_Forum/views/Forum/viewPost.html: 0
+[2015-04-17 12:44:03] EDIT TC_Forum/views/Forum/viewPost.html: 0
+[2015-04-17 12:44:36] EDIT TC_Forum/views/Forum/viewPost.html: 0
+[2015-04-17 12:46:53] EDIT TC_Forum/models/menu.py: 1
+[2015-04-17 12:47:14] EDIT TC_Forum/models/menu.py: -1
+[2015-04-17 12:47:36] EDIT TC_Forum/models/menu.py: 0
+[2015-04-17 12:48:02] EDIT TC_Forum/models/menu.py: 0
