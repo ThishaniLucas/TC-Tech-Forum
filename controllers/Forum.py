@@ -24,4 +24,5 @@ def viewPost():
 @auth.requires_membership('Founder')
 def manage():
     grid = SQLFORM.grid(db.Blog_Post)
+    gridc = SQLFORM.grid(db.Blog_Comm)
     return locals()

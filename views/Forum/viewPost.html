@@ -1,6 +1,6 @@
 {{extend 'layout.html'}}
 <h3 style="color:green">{{=po.Title}}</h3>
-<h4 style="color:#00FFFF">
+<h4 style="color:#FF0000" class="well">
   {{=MARKMIN(po.Post)}}
 </h4>
 <i>posted on</i><h6>{{=po.created_on}} by {{=po.created_by.first_name}}</h6>

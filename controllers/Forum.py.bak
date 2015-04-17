@@ -18,10 +18,11 @@ def viewPost():
     db.Blog_Comm.Blog_Post.readable = False
     db.Blog_Comm.Blog_Post.writable = False
     form = SQLFORM(db.Blog_Comm).process()
-    comm = db(db.Blog_Comm.Blog_Post == post.id).select()
+    comm = db(db.Blog_Comm.Blog_Post == po.id).select()
     return locals()
 
 @auth.requires_membership('Founder')
 def manage():
     grid = SQLFORM.grid(db.Blog_Post)
+    gridc = SQLFORM.grid(db.Blog_Comm)
     return locals()

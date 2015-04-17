@@ -6,5 +6,9 @@ body {
         color:white;
         }
 a:hover {
-        color:red;
+        color:white;
+        }
+
+#comments {
+            color:red;
         }
