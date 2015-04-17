@@ -16,10 +16,10 @@ a:hover {
         }
 
 #members {
-            width: 200px;
+            width: 230px;
             float:right;
-            position:fixed;
-            top:200px;
-            left:1300px;
+            position:absolute;
+            top:750px;
+            left:1220px;
             color:red;
         }

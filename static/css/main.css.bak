@@ -1,0 +1,26 @@
+#myCarousel .item {
+			height:400px;
+			margin-top:10px;
+	}
+
+	.carousel-caption h4 {
+	font-size:35px;
+	color:red;
+	}
+
+	.carousel-caption p {
+		font-size:19px;
+		color:red;
+	}
+
+	#slide1 {
+		background:url("../images/1.jpg") top center no-repeat;
+	}
+
+	#slide2 {
+		background:url("../images/2.jpg") top center no-repeat;
+	}
+
+	#slide3 {
+		background:url("../images/3.jpg") top center no-repeat;
+	}

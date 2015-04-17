@@ -44,6 +44,7 @@
   response.files.insert(2,URL('static','css/bootstrap-responsive.min.css'))
   response.files.insert(3,URL('static','css/web2py_bootstrap.css'))
   response.files.insert(4,URL('static','css/custom.css'))
+  response.files.insert(5,URL('static','css/main.css'))
   }}
 
   {{include 'web2py_ajax.html'}}
@@ -70,7 +71,7 @@
 
 <body id="bodyArea">
   <!-- Navbar ================================================== -->
-  <div class="navbar navbar-inverse">
+  <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="flash">{{=response.flash or ''}}</div>
     <div class="navbar-inner">
       <div class="container">
@@ -172,5 +173,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   <!-- End Google Analytics -->
   {{pass}}
   <script src="{{=URL('static','js/share.js',vars=dict(static=URL('static','images')))}}"></script>
+  <script src="{{=URL('static','js/main.js')}}"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 #########################################################################
 
 response.logo = A(B('TC-','Tech'),XML('&trade;&nbsp;'),
-                  _class="brand",_href="http://www.thishanionline.1apps.com/")
+                  _class="brand",_target='blank',_href="http://www.thishanionline.1apps.com/")
 response.title = request.application.replace('_',' ').title()
 response.subtitle = 'University of moratuwa'
 
